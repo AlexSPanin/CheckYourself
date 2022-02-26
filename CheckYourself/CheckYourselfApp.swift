@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CheckYourselfApp: App {
+    
+    @State private var value: Double = 20
+    @State private var isEditing: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(value: $value, isEditing: $isEditing)
         }
     }
 }
