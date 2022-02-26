@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E256900627CA139700873471 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256900527CA139700873471 /* ButtonsView.swift */; };
+		E256900827CA25CB00873471 /* ClearTouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256900727CA25CB00873471 /* ClearTouchSlider.swift */; };
 		E2B9A12D27CA0449007B9F63 /* CheckYourselfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9A12C27CA0449007B9F63 /* CheckYourselfApp.swift */; };
 		E2B9A12F27CA0449007B9F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9A12E27CA0449007B9F63 /* ContentView.swift */; };
 		E2B9A13127CA044B007B9F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B9A13027CA044B007B9F63 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E256900527CA139700873471 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		E256900727CA25CB00873471 /* ClearTouchSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTouchSlider.swift; sourceTree = "<group>"; };
 		E2B9A12927CA0449007B9F63 /* CheckYourself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckYourself.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B9A12C27CA0449007B9F63 /* CheckYourselfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckYourselfApp.swift; sourceTree = "<group>"; };
 		E2B9A12E27CA0449007B9F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				E2B9A12C27CA0449007B9F63 /* CheckYourselfApp.swift */,
 				E2B9A12E27CA0449007B9F63 /* ContentView.swift */,
+				E256900727CA25CB00873471 /* ClearTouchSlider.swift */,
+				E256900527CA139700873471 /* ButtonsView.swift */,
 				E2B9A13027CA044B007B9F63 /* Assets.xcassets */,
 				E2B9A13227CA044B007B9F63 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E256900627CA139700873471 /* ButtonsView.swift in Sources */,
 				E2B9A12F27CA0449007B9F63 /* ContentView.swift in Sources */,
+				E256900827CA25CB00873471 /* ClearTouchSlider.swift in Sources */,
 				E2B9A12D27CA0449007B9F63 /* CheckYourselfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

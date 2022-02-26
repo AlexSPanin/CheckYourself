@@ -9,42 +9,47 @@ import SwiftUI
 
 struct ContentView: View {
    
-    @Binding var value: Double
-    @Binding var isEditing: Bool
-    @State private var currentValue = Double.random(in: 0...100)
+    @State private var value: Double = 20
+    @State private var isEditing: Bool = false
+    @State private var currentValue = 100
     
-    
+    private let minValue = 0
+    private let maxValue = 100
     
     var body: some View {
-        VStack {
+        
+        VStack (alignment: .center, spacing: 5){
+            Text("Пододвиньте слайдер как можно ближе к: \(currentValue)")
+                .font(.body)
+                .multilineTextAlignment(.center)
             
-            Slider(value: $value, in: 0...100) {
-                Text("Slider Ghjdthrf")
-                    Spacer()
-            } minimumValueLabel: {
-                Text("0")
-            } maximumValueLabel: {
-                Text("100")
-            } onEditingChanged: { editing in
-                isEditing = editing 
+            HStack (alignment: .center, spacing: 5){
+                Text("\(minValue)")
+                    .font(.caption)
+                ClearTouchSlider(
+                    value: $value,
+                    minValue: minValue,
+                    maxValue: maxValue,
+                    colorThumb: .red,
+                    check: currentValue
+                )
+                Text("\(maxValue)")
+                    .font(.caption)
             }
             .padding()
             
-            
-            
-            Button("Проверь меня!") {}
-            .font(.title2)
-            .multilineTextAlignment(.center)
-            
-            Button("Начать заново") {}
-            .font(.title2)
-            .multilineTextAlignment(.center)
+          ButtonsView(
+            currentValue: $currentValue,
+            value: value,
+            minValue: minValue,
+            maxValue: maxValue
+          )
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(value: .constant(20), isEditing: .constant(true))
+        ContentView()
     }
 }
